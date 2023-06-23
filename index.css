@@ -1,7 +1,9 @@
 *{
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
+
     
   }
   html{
@@ -40,14 +42,27 @@
     
     
   }
+  .logo{
+    width: 10.75rem;
+    height: 2.5rem;
+    margin-top: 1.5rem;
+    margin-left: 3.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    cursor: pointer;
+  }
   .nav-tabs{
     margin-top:0.5rem;
     font-size: larger;
     position: relative;
-    left: 30rem;
+    left: 28rem;
+    
   }
+
   .nav-tabs li :hover{
     color: #003461;
+    
+    
   }
   nav ul {
     list-style-type: none;
@@ -119,9 +134,11 @@
    
     width: 1280px;
     height: 690px;
+   
+   
     position: fixed;
     z-index:-1;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     
     
     
@@ -165,14 +182,18 @@
     height: 55rem;
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
-    position: absolute;
+    position:relative;
+    
+    
+   
+    
    
   }
   #our-services h1{
     text-align: center;
     margin-top: 0px;
-    padding-top: 10px;
-    margin-bottom: 25px;
+    padding-top: 20px;
+    margin-bottom: 50px;
   }
   #service-grid{
     display: grid;
@@ -192,6 +213,11 @@
     cursor: pointer;
 
   }
+  .services:hover{
+    background-color: rgb(134 184 229);
+    
+
+  }
 
   .services-photo{
 
@@ -209,28 +235,34 @@
   }
   #our-sector-coverage{
 
-    background-color: rgb(214, 239, 245);
-    width: 78.4rem;
-    height: 135.4rem;
+    background-color: rgb(134 184 229);
+    width: 1280PX;
+    height: 166.4rem;
+    position: relative;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    
+   
     
   }
   #our-sector-coverage h1{
     text-align: center;
     margin-top: 0px;
-    padding-top: 10px;
-    margin-bottom: 25px;
+    padding-top: 20px;
+    margin-bottom: 50px;
     
   }
   .sectors{
-    background-color: rgb(217, 233, 252);
+    background-color: rgb(134 184 229);
     /* background-color: yellow; */
-    width: 78.4rem;
+    width: 1280PX;
     height: 20rem;
+    
 
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 30px;
+    margin-bottom: 114px;
 
    
   }
@@ -266,20 +298,41 @@
     border-top-left-radius: 3rem;
     border-bottom-left-radius: 3rem;
   }
+  .content{
+    background-color: rgb(134 184 229);
+    width: 39.2rem;
+    text-align: center;
+  }
+  .content p{
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+  }
   .sectors .content h2{
     margin-top: 25px;
     margin-bottom: 20px
   }
-
-
-  .logo{
-    width:8.75rem;
-    height:2.5rem;
-
-    margin-top: 0.5rem;
-    margin-left: 2.5rem;
-    margin-bottom: 0.5rem;
+  #sector-learn-more{
+    width: 7rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-top: 34px;
+    font-size:large;
+    background-color: rgb(0 105 196);
+    color: rgb(242 247 251);
+    border-radius: 0.3rem;
+    border: 2px solid rgb(0 105 196);
+    box-shadow: 1px 1px 15px 0.9px #a1b2ca;
+    
   }
+  #sector-learn-more:hover{
+    
+
+    background-color: rgb(242 247 253 / 0%);
+    color: rgb(0 105 196);
+  }
+
+
+  
 
   .footer-logo{
     width:8.75rem;
@@ -290,20 +343,99 @@
     margin-bottom: 0.5rem;
   }
   
-  .content{
-    background-color: rgb(217, 233, 252);
-    width: 39.2rem;
-    text-align: center;
-  }
+
  .footer{
-  background-color: antiquewhite;
-    width: 78.4rem;
-    height: 20rem;
+    background-color: #0069c4;
+    width: 1280px;;
+    height: 17rem;
+    color: #f2f7fb;
+    padding-top: 28px;
+    
 
     display: flex;
     justify-content:space-around;
+    position: relative;
+   
 
 
  }
- 
+
+
+.svg-address{
+  margin-top: 3px;
+  width: 20px;
+  height: 20px;
+}
+.svg-phone{
   
+  width: 20px;
+  height: 20px;
+}
+.svg-email{
+  
+  width: 20px;
+  height: 20px;
+}
+
+.address{
+  display: flex;
+  gap: 10px;
+}
+ 
+.phone-call{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.email{
+  display: flex;
+  gap: 10px;
+  margin-top: 9px;
+}
+  
+.quick-links{
+  margin-top: 16px;
+  line-height: 2rem;
+  list-style-type: none;
+  font-size: large;
+ }
+
+ 
+
+ .quick-links :hover{
+  color: #003461;
+  cursor: pointer;
+  padding-left: 5px;
+  transition: 350ms ease;
+
+  /* font-size:larger;
+  border-bottom: 2px solid #f2f7fb; */
+}
+.footer-services-box{
+  position: relative;
+    right: 4rem;
+    width: 200px  ;
+}
+
+.footer-services{
+  margin-top: 16px;
+  line-height: 2rem;
+  list-style-type: none;
+  font-size: large;
+ }
+
+ 
+
+ .footer-services :hover{
+  color: #003461;
+  cursor: pointer;
+  padding-left: 5px;
+  transition: 350ms ease;
+
+  /* font-size:larger;
+  border-bottom: 2px solid #f2f7fb; */
+}
+
+
+ 
